@@ -2,7 +2,7 @@ import { registerAs } from '@nestjs/config';
 import { JwtModuleOptions } from '@nestjs/jwt/dist/interfaces/jwt-module-options.interface';
 
 export default registerAs(
-  'jwt',
+  'access_token',
   (): JwtModuleOptions => ({
     signOptions: {
       algorithm: 'HS256',

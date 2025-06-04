@@ -14,6 +14,13 @@
 * Password reset flow
 
 ##
+
+#### To Generate Dependency Graph:
+
+`yarn madge dist/main.js --image graph.png`
+
+Download GraphViz Software first(https://www.graphviz.org/download/)
+
 ```
 src/
 ├── auth/
@@ -21,7 +28,7 @@ src/
 │   ├── auth.service.ts
 │   ├── auth.module.ts
 │   ├── strategies/
-│   │   ├── jwt.strategy.ts
+│   │   ├── access-token.strategy.ts
 │   │   ├── refresh-token.strategy.ts
 │   ├── guards/
 │   │   ├── jwt-auth.guard.ts
@@ -74,7 +81,7 @@ src/
 │       └── postgres.config.ts
 │
 ├── config/
-│   ├── jwt.config.ts
+│   ├── acess-token-jwt.config.ts
 │   ├── rate-limit.config.ts
 │   └── mail.config.ts
 │
